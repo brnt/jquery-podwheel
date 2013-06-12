@@ -57,6 +57,10 @@ specifying custom parameters:
 If the form input has an initial value, the Podwheel widget will be initialized
 to that value.
 
+You can change the default values that get applied to all subsequent podwheels
+created by assigning values to the configuration parameters (same names as
+above) in `$.fn.podwheel.defaults`.
+
 Customizing Podwheel Widgets
 ----------------------------
 
@@ -87,17 +91,21 @@ styles to your widgets:
 	}
 
 The most powerful way to customize the look of your Podwheel widgets is to use
-your own SVG image and then assigning it to the widget using the `svg`
+your own SVG image and then assign it to the widget using the `svg`
 configuration parameter. Please note that your SVG image must be **inline** not
 linked:
 
 	...
 	<input type="text" id="duration" name="duration" value="15"/>
 	<svg id="custom-podwheel" width="240" height="240" version="1.1"
-			xmlns="http://www.w3.org/2000/svg" xmlns:xlink= "http://www.w3.org/1999/xlink">
-		<circle class="wheel" cx="120" cy="120" r="118" stroke="black" stroke-width="1" fill="#FFF"/>
-		<circle class="innerwheel" cx="120" cy="120" r="52" stroke="black" stroke-width="1" fill="transparent"/>
-		<text class="display" font-size="55px" x="120" y="138" text-anchor="middle"></text>
+			xmlns="http://www.w3.org/2000/svg"
+			xmlns:xlink="http://www.w3.org/1999/xlink">
+		<circle class="wheel" cx="120" cy="120" r="118"
+			stroke="black" stroke-width="1" fill="#FFF"/>
+		<circle class="innerwheel" cx="120" cy="120" r="52"
+			stroke="black" stroke-width="1" fill="transparent"/>
+		<text class="display" font-size="55px" x="120" y="138"
+			text-anchor="middle"></text>
 		<circle class="knob" cx="120" cy="35" r="32" stroke="none" fill="#69F"/>
 	</svg>
 	...

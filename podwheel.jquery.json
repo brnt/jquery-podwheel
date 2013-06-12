@@ -1,0 +1,37 @@
+{
+	"name": "podwheel",
+	"title": "jQuery Podwheel",
+	"description": "iPod scroll wheel widget for jQuery",
+	"keywords": [
+		"ipod",
+		"scroll",
+		"wheel",
+		"scrollwheel",
+		"widget",
+		"input",
+		"svg"
+	],
+	"version": "0.1.0",
+	"author": {
+		"name": "Brent Thomson",
+		"url": "https://github.com/brnt/jquery-podwheel"
+	},
+	"maintainers": [
+		{
+			"name": "Brent Thomson"
+		}
+	],
+	"licenses": [
+		{
+			"type": "LGPLv3",
+			"url": "http://www.gnu.org/licenses/lgpl-3.0-standalone.html"
+		}
+	],
+	"bugs": "https://github.com/brnt/jquery-podwheel/issues",
+	"homepage": "https://github.com/brnt/jquery-podwheel",
+	"docs": "https://github.com/brnt/jquery-podwheel",
+	"dependencies": {
+		"jquery": ">=1.7",
+		"svg": "~1.4.5"
+	}
+}
