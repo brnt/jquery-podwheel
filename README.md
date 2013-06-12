@@ -108,6 +108,11 @@ linked:
 			text-anchor="middle"></text>
 		<circle class="knob" cx="120" cy="35" r="32" stroke="none" fill="#69F"/>
 	</svg>
+	<script type="text/javascript">
+		$(function(load_ev) {
+			$('#duration').podwheel({svg: $('#custom-podwheel')});
+		});
+	</script>
 	...
 
 Each of the main Podwheel elements must be present, of the expected type (i.e.,
